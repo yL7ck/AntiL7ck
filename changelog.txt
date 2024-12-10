@@ -1,0 +1,18 @@
+Changelog 01/01/2025
+Client v1.0.0-b (Beta)
+
+Launcher Updates
+- Custom launcher.
+- Fully automated updates.
+
+AntiCheat Implementations
+- AntiDelayAura
+- AntiFakeLag
+- AntiMultiAura
+- AntiSpeedHack
+- Module Verification (Mod Macro)
+- Mod Verification
+- AntiVelocity
+- AntiMemDump
+- AntiHitbox
+- AntiKillAura
