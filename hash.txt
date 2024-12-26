@@ -1,0 +1,2 @@
+serverHash: ABCD12345
+serverHash2: ABCDF12345
