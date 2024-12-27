@@ -1,23 +1,15 @@
 [
     {
-        "path": "./launcher/Linux/libLauncherJNI.so",
-        "hash": "f3b50d7ac5ca1f6d7d44891bca9c49fb47b8ccdda9484e982e998d164753ca06"
+        "path": "./launcher/Linux/LauncherJNI.so",
+        "hash": "353b7787af748d38cdf1d1330836dd2890e3a739db03c216fae340c52262d74d"
     },
     {
-        "path": "./launcher/MacOS/libLauncherJNI.dylib",
-        "hash": "d9d92bcd1c2e03c1bf66afd7b05ac2a7b7ce5c84f56ed8d2af7a65509934f4f6"
+        "path": "./launcher/Linux/libLauncherJNI.so",
+        "hash": "844d0397e64acab3a802bf0a1e77992ccb41dc38b68adadc384b7cdf6586cd71"
     },
     {
         "path": "./launcher/Windows/LauncherJNI.dll",
-        "hash": "d60623c89601292a7702792c0e4321165532a8772ea0c397ae5c2901e314e754"
-    },
-    {
-        "path": "./launcher_settings.hash",
-        "hash": "344a3fbd02266900a46e73cb78fbe94a45a569901ce7f566aa36dd350a3a3586"
-    },
-    {
-        "path": "./launcher_settings.json",
-        "hash": "fd37b1871fbe0269b4a0a7de13d0c04083bd9999f087b54370e186d6839ebd4f"
+        "hash": "55baeb010840b1c7e3f589c3bccd25f71c99ef6ce55473af70858d42807a5386"
     },
     {
         "path": "./libraries/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar",
@@ -38,10 +30,6 @@
     {
         "path": "./libraries/net/sf/jopt-simple/jopt-simple/4.5/jopt-simple-4.5.jar",
         "hash": "64335a48be6b142a7d0c13ec5c82a707857aa58c0234e6eda3eaca0e96eea51b"
-    },
-    {
-        "path": "./libraries/net/sf/jopt-simple/jopt-simple/4.5/jopt-simple-4.5.jar.sha",
-        "hash": "5f93679207609ec59042db2739bbf84d53281eaba8c9cc9b5c5a9ee508ed0891"
     },
     {
         "path": "./libraries/net/sourceforge/argo/argo/3.2-small/argo-3.2-small.jar",
@@ -152,12 +140,12 @@
         "hash": "c65b3cad1a64b9587b51a2f9b81a5dcc69920ea3cad00769db9763d9e79b1c16"
     },
     {
-        "path": "./libraries/org/lwjgl/lwjgl/lwjgl-platform/2.9.4-nightly-20150209/lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar",
-        "hash": "f2e1f2c6bd7511a7504f389b8b716f5d8dc2fdc71e29c89b52644314cf0a228e"
-    },
-    {
         "path": "./libraries/org/lwjgl/lwjgl/lwjgl-platform/2.9.4-nightly-20150209/lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar.sha",
         "hash": "a260e83c60ddd6144f3e00c4544809583c2dedbdf0ff6f024604dc925e7f45ca"
+    },
+    {
+        "path": "./libraries/org/lwjgl/lwjgl/lwjgl-platform/2.9.4-nightly-20150209/lwjgl-platform-2.9.4-nightly-20150209.jar",
+        "hash": "f2e1f2c6bd7511a7504f389b8b716f5d8dc2fdc71e29c89b52644314cf0a228e"
     },
     {
         "path": "./libraries/org/lwjgl/lwjgl/lwjgl_util/2.9.4-nightly-20150209/lwjgl_util-2.9.4-nightly-20150209.jar",
@@ -172,31 +160,15 @@
         "hash": "165b583b0b548405dd97019666f94a86ee1d1e3af227ae4dc82c6e27d6885bb1"
     },
     {
-        "path": "./libraries/org/ow2/asm/asm-all/4.1/asm-all-4.1.jar.sha",
-        "hash": "f68914671d0acdeddcd6696c9a12a3fa957806f7793cd3de8455b60994da23f2"
-    },
-    {
-        "path": "./libraries/org/ow2/asm/asm-all/5.0.3/asm-all-5.0.3.jar",
-        "hash": "09d44e6adddaab9fd89ea3164c439f71c755769fa8d3a940352ab3d2003b98ff"
-    },
-    {
-        "path": "./libraries/org/ow2/asm/asm-all/5.0.3/asm-all-5.0.3.jar.sha",
-        "hash": "35c4cf49469203fa078e5c5195a8f794325fe3341ea558726ceaf77c052829d0"
-    },
-    {
-        "path": "./libraries/org/ow2/asm/asm-all/5.0.4/asm-all-5.0.4.jar",
-        "hash": "f2f3a7e41674226013ba35dc6bdcb39c2cf6bf0baf7d367b94d8b91846136446"
-    },
-    {
         "path": "./libraries/org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar",
         "hash": "b36b99b8d99ea7857554d9b25dfdbd1fb25378c926f7b9e0249983c99335b2c4"
     },
     {
         "path": "./versions/AntiL7ck/AntiL7ck.jar",
-        "hash": "437fc1c8d9b0098d8182f83b4d9a06c8ab8273490caf5c9ace5b42b769992c05"
+        "hash": "9bd5d5e99220ba6eac2fb47c1a59948a0e84c6b48467ac9a353259a597937095"
     },
     {
         "path": "./versions/AntiL7ck/AntiL7ck.json",
-        "hash": "e6be284185c745d0ddae2ab5872896b7c1ca5aad9c9879464c51b83e766bd6ae"
+        "hash": "fe514a7b599dfd6d65e3ed952fd021a5de8a88751997127c7e4ac4d904ad6394"
     }
 ]
