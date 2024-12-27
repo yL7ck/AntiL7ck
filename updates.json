@@ -8,6 +8,18 @@
         "hash": "8402b7d7252cf3392e540993c1d55fb11f92fa37c3e0fad5ca25ed43f1e36376"
     },
     {
+        "path": "./libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar",
+        "hash": "79b5a4f5829e1a49a415711f7fb8eb5b9ad22defa72929fda2da96ec30d3f018"
+    },
+    {
+        "path": "./libraries/net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-windows.jar",
+        "hash": "24afbd5e1fab17da57d16a4d3f19d53f36155ef46a9976484201a4bb9722287f"
+    },
+    {
+        "path": "./libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar",
+        "hash": "c3334ff39cf0ab3b54925619101054c90098b7c733b1e7834c7b75e4c41e84a5"
+    },
+    {
         "path": "./libraries/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar",
         "hash": "c0328cd07ca9e363a5acd00c1cf4afe8cf554bd6d373834981ba05cebec687fb"
     },
