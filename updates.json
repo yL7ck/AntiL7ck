@@ -1,23 +1,15 @@
 [
     {
         "path": "./launcher/Linux/LauncherJNI.so",
-        "hash": "353b7787af748d38cdf1d1330836dd2890e3a739db03c216fae340c52262d74d"
-    },
-    {
-        "path": "./launcher/Linux/libLauncherJNI.so",
-        "hash": "844d0397e64acab3a802bf0a1e77992ccb41dc38b68adadc384b7cdf6586cd71"
+        "hash": "f3f3bc85f5f435551cc92529b3cfaf81cf40a9c76e3dfc4dc81ded1c39951c29"
     },
     {
         "path": "./launcher/Windows/LauncherJNI.dll",
-        "hash": "55baeb010840b1c7e3f589c3bccd25f71c99ef6ce55473af70858d42807a5386"
+        "hash": "8402b7d7252cf3392e540993c1d55fb11f92fa37c3e0fad5ca25ed43f1e36376"
     },
     {
         "path": "./libraries/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar",
         "hash": "c0328cd07ca9e363a5acd00c1cf4afe8cf554bd6d373834981ba05cebec687fb"
-    },
-    {
-        "path": "./libraries/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar.sha",
-        "hash": "4e835c350588513aae2a132d7bf0dd1b2f67fac7b6397f8aa577efb32d79a86b"
     },
     {
         "path": "./libraries/com/google/guava/guava/14.0-rc3/guava-14.0-rc3.jar",
