@@ -1,13 +1,5 @@
 [
     {
-        "path": "./launcher/Linux/LauncherJNI.so",
-        "hash": "f3f3bc85f5f435551cc92529b3cfaf81cf40a9c76e3dfc4dc81ded1c39951c29"
-    },
-    {
-        "path": "./launcher/Windows/LauncherJNI.dll",
-        "hash": "8402b7d7252cf3392e540993c1d55fb11f92fa37c3e0fad5ca25ed43f1e36376"
-    },
-    {
         "path": "./libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar",
         "hash": "79b5a4f5829e1a49a415711f7fb8eb5b9ad22defa72929fda2da96ec30d3f018"
     },
