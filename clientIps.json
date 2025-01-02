@@ -1,7 +1,4 @@
 {
-    "MysticCraft": {
-        "ips": "jogar.mysticcraft.com.br;localhost:10132"
-    },
     "NightCraft": {
         "ips": "jogar.nightcraftpvp.com.br;localhost:10132"
     }
