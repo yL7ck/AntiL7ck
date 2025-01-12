@@ -1,16 +1,15 @@
 ChangeLog 12/01/2025
 Client v1.1.0-b (Beta)
 
-Optimizations
-- Foram feitas algumas otimizações, aumentando o FPS sem quedas;
-- Melhoria na conexão, utilizando a mesma thread da primeira conexão.
-- Ao ativar o FPS Boost da modpack, estará removendo todas as particulas.
+Melhorias
+- Aumento significativo de FPS com novas otimizações.
+- Melhor gestão de conexão usando a thread inicial.
+- O "FPS Boost" agora remove todas as partículas ao ser ativado.
 
-Crash
-- Corrigido crash do "pauseOnLostFocus".
+Correções
+- Resolvido crash ao alterar "pauseOnLostFocus".
+- Ajustes no AntiCheat para reduzir falsos positivos.
 
-AntiCheat
-- Correções de Falsos Positivos.
 
 Changelog 01/01/2025
 Client v1.0.0-b (Beta)
