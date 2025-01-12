@@ -10,7 +10,6 @@ Correções
 - Resolvido crash ao alterar "pauseOnLostFocus".
 - Ajustes no AntiCheat para reduzir falsos positivos.
 
-
 Changelog 01/01/2025
 Client v1.0.0-b (Beta)
 
