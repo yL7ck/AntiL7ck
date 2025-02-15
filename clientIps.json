@@ -4,5 +4,8 @@
     },
     "MysticCraft": {
         "ips": "jogar.mysticcraft.com.br;pesca.mysticcraft.com.br"
+    },
+    "StarMC": {
+        "ips": "jogar.starmc.com.br"
     }
 }
