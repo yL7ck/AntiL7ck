@@ -10,5 +10,8 @@
     },
     "AnarchyCraft": {
         "ips": "fullpvp.anarchycraft.com.br"
+    },
+    "Localhost": {
+        "ips": "localhost:10132"
     }
 }
