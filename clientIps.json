@@ -1,20 +1,5 @@
 {
-    "StarArena": {
-        "ips": "stararena.online"
-    },
-    "MysticCraft": {
-        "ips": "jogar.mysticcraft.com.br;pesca.mysticcraft.com.br"
-    },
-    "StarMC": {
-        "ips": "starmc.hostsquare.com.br"
-    },
     "AnarchyCraft": {
-        "ips": "fullpvp.anarchycraft.com.br;adv.anarchycraft.com.br;166.0.189.64:10138"
-    },
-    "Localhost": {
-        "ips": "fullpvp.anarchycraft.com.br;166.0.189.64:10138"
-    },
-    "Unknown": {
         "ips": "fullpvp.anarchycraft.com.br;adv.anarchycraft.com.br;166.0.189.64:10138"
     }
 }
