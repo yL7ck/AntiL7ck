@@ -166,5 +166,9 @@
     {
         "path": "./versions/AntiL7ck/AntiL7ck.json",
         "hash": "fe514a7b599dfd6d65e3ed952fd021a5de8a88751997127c7e4ac4d904ad6394"
-    }
+    },
+    {
+        "path": "./launcher/updater.jar",
+        "hash": "04b1c541cf61d83bc3426b9f98ff1fd4cd1377b7e8d62d4d16f75a547d66876b"
+    },
 ]
