@@ -1,5 +1,8 @@
 {
     "MysticCraft": {
         "ips": "jogar.mysticcraft.com.br;fullpvp.mysticcraft.com.br"
+    },
+    "AnarchyCraft": {
+        "ips": "fullpvp.anarchycraft.com.br"
     }
 }
