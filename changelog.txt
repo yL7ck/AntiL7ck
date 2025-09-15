@@ -1,11 +1,11 @@
-ChangeLog 12/01/2025
-Client v1.1.0-b (Beta)
+📌 ChangeLog – 15/09/2025
+Client v1.0.0
 
-Melhorias
-- Aumento significativo de FPS com novas otimizações.
-- Melhor gestão de conexão usando a thread inicial.
-- O "FPS Boost" agora remove todas as partículas ao ser ativado.
+🚀 Melhorias
+- Grandes otimizações de performance realizadas (mais de 50 classes revisadas e aprimoradas).
+- Novo comando /mudarskin para alterar sua skin diretamente no cliente.
+- Novo comando /pontacabeca adicionado para personalização extra in-game.
 
-Correções
-- Resolvido crash ao alterar "pauseOnLostFocus".
-- Ajustes no AntiCheat para reduzir falsos positivos.
+🛠️ Correções
+- AntiCheat revisado: corrigida a vulnerabilidade que permitia burlar usando ArtMoney.
+- Resolvido o problema de queda de FPS, garantindo uma experiência mais estável e fluida.
