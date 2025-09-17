@@ -1,11 +1,8 @@
 Changelog – 15/09/2025
-Client v1.0.0
+Client v1.0.1
 
 Melhorias
-- Grandes otimizacoes de performance realizadas (mais de 50 classes revisadas e aprimoradas).
-- Novo comando /mudarskin para alterar sua skin diretamente no cliente.
-- Novo comando /pontacabeca adicionado para personalizacao extra in-game.
+- Otimizado.
 
 Correcoes
 - AntiCheat revisado: corrigida a vulnerabilidade que permitia burlar usando ArtMoney.
-- Resolvido o problema de queda de FPS, garantindo uma experiencia mais estavel e fluida.
