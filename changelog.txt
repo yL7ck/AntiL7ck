@@ -1,4 +1,4 @@
-Changelog – 15/09/2025
+Changelog – 17/09/2025
 Client v1.0.1
 
 Melhorias
