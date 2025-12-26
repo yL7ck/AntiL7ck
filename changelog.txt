@@ -1,3 +1,12 @@
+Changelog – 26/12/2025
+Client v1.1.0
+
+Melhorias
+- Otimizado.
+
+Correcoes
+- Detecção de Cheat's injetáveis
+
 Changelog – 24/10/2025
 Client v1.0.2
 
@@ -7,12 +16,3 @@ Melhorias
 Correcoes
 - AntiCheat revisado: corrigida a vulnerabilidade que permitia burlar usando ArtMoney.
 - Macro de acrobacia funcionando.
-
-Changelog – 17/09/2025
-Client v1.0.1
-
-Melhorias
-- Otimizado.
-
-Correcoes
-- AntiCheat revisado: corrigida a vulnerabilidade que permitia burlar usando ArtMoney.
