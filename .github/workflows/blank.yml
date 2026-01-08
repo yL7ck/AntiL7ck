@@ -1,0 +1,85 @@
+name: Atualizar Versões e Hashes
+
+on:
+  push:
+    paths:
+      - 'versions/AntiL7ck/AntiL7ck.jar'
+      - 'launcher/launcher.jar'
+
+jobs:
+  update-versions:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Necessário pra commitar de volta
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detectar qual arquivo mudou
+        id: detect
+        run: |
+          if git diff --name-only HEAD~1 | grep -q "versions/AntiL7ck/AntiL7ck.jar"; then
+            echo "type=client" >> $GITHUB_OUTPUT
+            echo "file=versions/AntiL7ck/AntiL7ck.jar"
+          elif git diff --name-only HEAD~1 | grep -q "launcher/launcher.jar"; then
+            echo "type=launcher" >> $GITHUB_OUTPUT
+            echo "file=launcher/launcher.jar"
+          else
+            echo "Nenhum .jar relevante mudou"
+            exit 0
+          fi
+
+      - name: Calcular hashes
+        id: hashes
+        run: |
+          FILE="${{ steps.detect.outputs.file }}"
+          SHA256=$(sha256sum "$FILE" | awk '{print $1}')
+          MD5=$(md5sum "$FILE" | awk '{print $1}')
+          echo "sha256=$SHA256" >> $GITHUB_OUTPUT
+          echo "md5=$MD5" >> $GITHUB_OUTPUT
+
+      - name: Incrementar versão e atualizar version.json
+        run: |
+          TYPE="${{ steps.detect.outputs.type }}"
+          FILE="${{ steps.detect.outputs.file }}"
+          SHA256="${{ steps.hashes.outputs.sha256 }}"
+          MD5="${{ steps.hashes.outputs.md5 }}"
+
+          # Ler versão atual
+          CURRENT_VERSION=$(jq -r ".${TYPE}Version" version.json)
+
+          # Incrementar patch (v1.0.0 -> v1.0.1)
+          if [[ "$CURRENT_VERSION" =~ ^v([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
+            MAJOR=${BASH_REMATCH[1]}
+            MINOR=${BASH_REMATCH[2]}
+            PATCH=$((BASH_REMATCH[3] + 1))
+            NEW_VERSION="v${MAJOR}.${MINOR}.${PATCH}"
+          else
+            NEW_VERSION="v1.0.0"
+          fi
+
+          # Atualizar version.json
+          jq ".${TYPE}Version = \"$NEW_VERSION\"" version.json > tmp.json && mv tmp.json version.json
+
+          if [ "$TYPE" = "client" ]; then
+            jq ".clientHashMD5 = \"$MD5\" | .clientHashSHA256 = \"$SHA256\"" version.json > tmp.json && mv tmp.json version.json
+          fi
+
+      - name: Atualizar updates.json com SHA256
+        run: |
+          FILE_PATH=$(echo "${{ steps.detect.outputs.file }}" | sed 's|^|./|')
+          SHA256="${{ steps.hashes.outputs.sha256 }}"
+
+          # Atualiza o hash da linha correspondente
+          jq --arg path "$FILE_PATH" --arg hash "$SHA256" '
+            map(if .path == $path then .hash = $hash else . end)
+          ' public/updates.json > tmp.json && mv tmp.json public/updates.json
+
+      - name: Commit e Push das mudanças
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add version.json public/updates.json
+          git commit -m "Auto-update: nova versão e hashes [skip ci]"
+          git push
